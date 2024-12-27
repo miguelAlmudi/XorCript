@@ -82,6 +82,15 @@ int main(){
     printf("Saida Xor3:          %s\n", outputBin);
 
     
+    printf("-----------------------\n");
+
+
+    char decryptedBin[2048];
+    char decrypted[256];
+    xorCryptAlternative2(outputBin, decryptedBin, passwordBin);
+    binaryToString(decryptedBin, decrypted);
+    printf("Binario descript:    %s\n", decryptedBin);
+    printf("Descript:            %s\n", decrypted);
     
 
 
