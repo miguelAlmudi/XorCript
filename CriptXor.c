@@ -95,9 +95,9 @@ int main(){
 		 
 		 if(selec == 2){
 			 
-			 printf("Digite uma string: ");
+			 printf("Digite o Binario: ");
 			 scanf("%255s", inputBin); // Recebe a string do teclado
-			 printf("Digite uma senha: ");
+			 printf("Digite sua senha: ");
 			 scanf("%255s", password); // Recebe a senha do teclado
 			 			 
 			 stringToBinary(password, passwordBin);
