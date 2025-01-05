@@ -60,8 +60,8 @@ void binaryToString(char *input, char *output) {
 
 int main(){
 
-	int TAM1 = 4096;
-	int TAM2 = 32767;
+	int TAM1 = 8191;
+	int TAM2 = 65535;
     char input[TAM1]; // Buffer para armazenar a string de entrada    
     char password[TAM1]; // Buffer para armazenar a senha
     char inputBin[TAM2];
@@ -81,9 +81,9 @@ int main(){
 		 
 		 if(selec == 1){
 			 printf("Digite uma string: ");
-			 scanf("%255s", input); // Recebe a string do teclado
+			 scanf("%8190s", input); // Recebe a string do teclado
 			 printf("Digite uma senha: ");
-			 scanf("%255s", password); // Recebe a senha do teclado
+			 scanf("%8190s", password); // Recebe a senha do teclado
 			 
 			 stringToBinary(input, inputBin);
 			 stringToBinary(password, passwordBin);
@@ -106,9 +106,9 @@ int main(){
 		 if(selec == 2){
 			 
 			 printf("Digite o Binario: ");
-			 scanf("%4095s", inputBin); // Recebe a string do teclado sempre igual a TAM1-1
+			 scanf("%8190s", inputBin); // Recebe a string do teclado sempre igual a TAM1-1
 			 printf("Digite sua senha: ");
-			 scanf("%4095s", password); // Recebe a senha do teclado
+			 scanf("%8190s", password); // Recebe a senha do teclado
 			 			 
 			 stringToBinary(password, passwordBin);
 			 
