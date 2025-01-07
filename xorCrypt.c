@@ -70,7 +70,9 @@ int main(){
     char decryptedBin[TAM2];
     char decrypted[TAM1];
     int selec = 1; 
-
+	
+	system("title XORCRYPT - BY: DIE");
+	system("color 2");
     	
 	 while(selec == 1 || selec == 2){
 	 
